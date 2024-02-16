@@ -1,0 +1,22 @@
+#prabhuPictures {
+    width: 360px;
+    height: 400px;
+    border-radius: 9px;
+    overflow: hidden;
+    object-fit: cover;
+    animation: glowing 2s infinite;
+}
+
+@keyframes glowing {
+    0% {
+        box-shadow: 0 0 10px rgba(219, 172, 52, 0.5);
+    }
+
+    50% {
+        box-shadow: 0 0 20px rgba(219, 172, 52, 0.8);
+    }
+
+    100% {
+        box-shadow: 0 0 10px rgba(219, 172, 52, 0.5);
+    }
+}

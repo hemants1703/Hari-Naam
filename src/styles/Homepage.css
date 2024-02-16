@@ -1,0 +1,10 @@
+#counterContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 360px;
+    margin: auto;
+    gap: 10px;
+    font-size: xx-large;
+}
