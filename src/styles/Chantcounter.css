@@ -2,11 +2,12 @@
     color: #000;
     background-color: #fff;
     border-radius: 9px;
-    padding: 15px 105px;
+    padding: 10px 105px;
     font-size: xx-large;
     border: 0;
     box-shadow: 0 0 10px rgba(219, 172, 52);
     height: 100%;
+    width: 100%;
     cursor: pointer;
     animation: glow 2s infinite;
 }

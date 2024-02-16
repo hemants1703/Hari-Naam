@@ -2,23 +2,17 @@ import { useState, useEffect } from "react";
 import "../styles/Chantcounter.css";
 
 export default function Chantcounter({ handleMalaCount }) {
-  const [chantCount, setChantCount] = useState("0107");
+  const [chantCount, setChantCount] = useState(105);
 
   useEffect(() => {
-    if (chantCount === "0108") {
-      handleMalaCount(chantCount);
+    if (chantCount === 108) {
+      handleMalaCount();
+      setChantCount(0);
     }
-  }, [chantCount]);
+  }, [chantCount, handleMalaCount]);
 
   const updateChantCount = () => {
-    setChantCount((prevCount) => {
-      let newCount = parseInt(prevCount) + 1;
-      if (newCount === 108) {
-        handleMalaCount(newCount.toString().padStart(4, "0"));
-        newCount = 0;
-      }
-      return newCount.toString().padStart(4, "0");
-    });
+    setChantCount((prevCount) => prevCount + 1);
   };
 
   return (
