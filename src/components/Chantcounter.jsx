@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import "../styles/Chantcounter.css";
 
 export default function Chantcounter({ handleMalaCount }) {
-  const [chantCount, setChantCount] = useState(105);
+  const [chantCount, setChantCount] = useState(0);
 
   useEffect(() => {
     if (chantCount === 108) {
