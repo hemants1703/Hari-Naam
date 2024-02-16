@@ -1,4 +1,4 @@
-import picturesData from "../picturesData";
+import picturesData from "../picturesData.json";
 
 import "../styles/Homepage.css";
 
